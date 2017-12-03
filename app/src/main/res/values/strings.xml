@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Health Platform</string>
+    <string name="action_settings">Settings</string>
+    <string name="category_text_heartrate">Heart Rate</string>
+    <string name="category_unit_heartrate">bpm</string>
+    <string name="category_text_weight">Weight</string>
+    <string name="category_unit_weight">Kg</string>
+    <string name="category_text_height">Height</string>
+    <string name="category_unit_height">cm</string>
+</resources>

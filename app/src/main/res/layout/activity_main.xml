@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+              android:layout_width="match_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_height="wrap_content"
+                  android:layout_width="match_parent" android:padding="3dp">
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:layout_weight="0.9"
+                      android:padding="2dp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Till Lindemann"
+                    android:textSize="36sp"
+            />
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="54 years"
+                    android:textSize="24sp" android:textColor="@color/colorPrimaryDark"/>
+        </LinearLayout>
+        <ImageView android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:src="@drawable/till_lindemann" android:id="@+id/imageView"
+                   android:layout_weight="0.1"
+                   android:layout_gravity="right" android:layout_margin="0dp"/>
+
+    </LinearLayout>
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/gridview"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:columnWidth="@dimen/tile_side"
+              android:numColumns="auto_fit"
+              android:verticalSpacing="1dp"
+              android:horizontalSpacing="1dp"
+              android:padding="1dp"
+              android:stretchMode="none"
+              android:gravity="left"
+              android:background="@color/colorGrayBackGround"/>
+</LinearLayout>

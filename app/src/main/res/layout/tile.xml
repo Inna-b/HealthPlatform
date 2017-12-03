@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="@dimen/tile_side"
+                android:layout_height="@dimen/tile_side"
+                android:background="@color/colorWhite"
+                android:padding="@dimen/tile_padding"
+                android:id="@+id/tileBase">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/categoryName"
+            android:gravity="top"
+            android:textSize="14sp"
+            android:textColor="@color/pureBlack"
+            android:textAlignment="center"/>
+
+    <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/iconView"
+            android:layout_below="@+id/categoryName"
+            android:foregroundGravity="left"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/valueTxt"
+            android:text="185 cm"
+            android:layout_below="@+id/categoryName" android:layout_toEndOf="@+id/iconView"
+            android:layout_alignParentEnd="false" android:layout_alignParentRight="false"
+            android:layout_alignParentStart="false" android:layout_alignParentTop="false"
+            android:layout_alignParentLeft="false" android:fontFamily="casual" android:textSize="16sp"
+            android:textStyle="bold" android:lineSpacingMultiplier="0.7"/>
+
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/graphView"
+            android:layout_below="@+id/iconView"/>
+
+</RelativeLayout>
